@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إذاعة القرآن الكريم</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- ── Header ── -->
+    <header class="header">
+      <div class="header-ornament">﷽</div>
+      <h1 class="header-title">إذاعة القرآن الكريم</h1>
+      <p class="header-subtitle">LIVE QURAN RADIO • بث مباشر</p>
+    </header>
+
+    <!-- ── Now Playing Card ── -->
+    <div class="now-playing-card">
+      <div class="now-playing-label">
+        <div class="status-indicator">
+          <div id="statusDot"></div>
+          <div id="loadingRing"></div>
+          <span id="statusText">متوقف</span>
+        </div>
+      </div>
+
+      <div class="now-playing-info">
+        <span id="nowPlayingName">محمود خليل الحصري</span>
+        <span id="nowPlayingSubtitle">رواية حفص</span>
+      </div>
+
+      <div class="controls">
+        <button id="playBtn" title="تشغيل / إيقاف">
+          <span id="playIcon">▶</span>
+        </button>
+
+        <div class="volume-control">
+          <span id="volumeIcon" title="كتم الصوت">🔊</span>
+          <input
+            type="range"
+            id="volumeSlider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.8"
+            title="مستوى الصوت"
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Station List ── -->
+    <div class="section-divider">
+      <span class="divider-icon">✦</span>
+      <span>اختر القارئ</span>
+      <span class="divider-icon">✦</span>
+    </div>
+
+    <div class="station-list-wrapper">
+      <div id="stationList"></div>
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+      <span>❝</span> وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا <span>❞</span>
+    </footer>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

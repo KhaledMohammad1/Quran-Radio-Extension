@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "إذاعة القرآن الكريم",
+  "version": "1.0",
+  "description": "بث مباشر لإذاعة القرآن الكريم بصوت نخبة من القراء",
+  "permissions": [
+    "offscreen",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon128.png"
+  },
+  "icons": {
+    "16": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  }
+}
