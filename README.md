@@ -64,10 +64,4 @@ The extension declares these permissions:
 
 The extension's privacy information is available in [privacy.md](privacy.md).
 
-## Version
-
-The uploaded extension package identifies itself as **version 1.2**.
-
----
-
 واجهة الإضافة مخصصة للاستماع إلى إذاعة القرآن الكريم والتلاوات أثناء استخدام المتصفح أو المذاكرة. يمكنك تثبيتها باتباع خطوات التثبيت أعلاه، مع التأكد من اختيار المجلد الذي يحتوي على ملف `manifest.json`.
