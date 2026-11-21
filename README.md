@@ -1,26 +1,73 @@
-دي إضافة اذاعة قرآن كريم لاغلب المشايخ والقراء المعروفين بتشغلها على المتصفح وانت شغال او بتذاكر ،
-حمل ملف Radio-Quran.rar من فوق ،
-فك الضغط، ،
-افتح جوجل كروم او مايكروسوفت ايدج او اي متصفح تاني واضغط على ايقونة ال Extenions ،
-اختار اخر اختيار Manage Extenions ،
-فعل اختيار Developer mode فوق على اليمين او الشمال على حسب لغة الجهاز ،
-اضغط على Load Unpacked وروح على الفولدر اللي انت فكيته من الضغط ودوس selsect folder ،
-بعد كدة دوس على ايقونة ال Extenions اللي ضغطت عليها في الاول وهتلاقي الاضافة ظهرت ، دوس على علامة الدبوس اللي جنبها عشان تبقى متثبتة جنب شريط البحث ،
-اضغط عليها واسمع
+# Quran Radio – Chrome Extension
 
+Listen to Quran radio broadcasts and recitations while browsing, studying, or working.
 
-Download the Radio-Quran.rar file from above.
+## Overview
 
-Extract the compressed file.
+**Quran Radio** is a lightweight browser extension with an Arabic-first interface for listening to Quran recitations and radio streams. It supports a searchable listening experience, organized content sections, and convenient playback controls.
 
-Open Google Chrome, Microsoft Edge, or any other browser, and click on the Extensions icon.
+## Features
 
-Select the last option, "Manage Extensions".
+- Quran radio and recitation streams.
+- Organized sections for browsing available content.
+- Search to find a reciter or stream.
+- Playback controls and volume adjustment.
+- Arabic interface with a language switcher.
+- Light and dark appearance options.
+- Background audio playback using the extension's offscreen document.
 
-Enable "Developer mode" at the top right or left (depending on your browser's language).
+## Compatibility
 
-Click on "Load unpacked", navigate to the folder you just extracted, and click "Select Folder".
+This extension uses **Manifest V3** and is intended for Chromium-based browsers that support unpacked extensions, such as:
 
-Click on the Extensions icon again, and you will see the extension. Click the pin icon next to it to keep it pinned next to the search bar.
+- Google Chrome
+- Microsoft Edge
+- Other compatible Chromium-based browsers
 
-Click on it, listen, and enjoy!
+## Installation
+
+1. Download the latest extension ZIP from this repository.
+2. Extract the ZIP file to a folder on your computer.
+3. Open your browser's extensions page:
+   - Chrome: `chrome://extensions`
+   - Edge: `edge://extensions`
+4. Enable **Developer mode**.
+5. Select **Load unpacked**.
+6. Choose the extracted extension folder (the folder containing `manifest.json`).
+7. Pin **Quran Radio** from the Extensions menu for quick access.
+
+## Updating
+
+Download and extract the latest version, then open the extensions page and use **Reload** on the existing extension after selecting the updated folder if needed. Keep the extracted extension folder in a permanent location.
+
+## Project structure
+
+| File | Purpose |
+|---|---|
+| `manifest.json` | Extension metadata, permissions, and entry points |
+| `background.js` | Background extension logic |
+| `popup.html` | Popup interface |
+| `popup.css` | Popup styling |
+| `popup.js` | Interface behavior and playback controls |
+| `offscreen.html` | Offscreen audio document |
+| `offscreen.js` | Audio playback handling |
+| `icon128.png` | Extension icon |
+
+## Permissions
+
+The extension declares these permissions:
+
+- `storage` — save extension preferences locally.
+- `offscreen` — support audio playback outside the popup window.
+
+## Privacy
+
+The extension's privacy information is available in [privacy.md](privacy.md).
+
+## Version
+
+The uploaded extension package identifies itself as **version 1.2**.
+
+---
+
+واجهة الإضافة مخصصة للاستماع إلى إذاعة القرآن الكريم والتلاوات أثناء استخدام المتصفح أو المذاكرة. يمكنك تثبيتها باتباع خطوات التثبيت أعلاه، مع التأكد من اختيار المجلد الذي يحتوي على ملف `manifest.json`.
